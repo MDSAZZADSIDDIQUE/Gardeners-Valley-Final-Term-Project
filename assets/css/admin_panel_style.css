@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Open+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul {
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 2.5vh;
+}
+
+nav ul li a {
+    color: goldenrod;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    padding: 5vh;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: goldenrod;
+    color: black;
+}
+
+.backgroundImage {
+    animation: changeImage 10s infinite ease-in-out;
+    background-image: url("../images/pexels-dominika-roseclay-1141792.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1400px;
+    font-family: 'Open Sans', sans-serif;
+    justify-content: center;
+    overflow: hidden;
+    outline-offset: -5vw;
+    position: relative;
+    text-align: center;
+    width: 100vw;
+}
+
+.logo {
+    height: 5vw;
+    width: 5vw;
+}
+
+.navbar {
+    align-items: center;
+    background-color: black;
+    border-bottom: 1px solid goldenrod;
+    display: flex;
+    height: 25%;
+}
+
+.sidebar {
+    height: 100%;
+    width: 20%;
+    background-color: goldenrod;
+    padding-top: 5vh;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+
+.sidebar a, .dropdown-btn {
+    padding: 5vh 1vh 5vh 5vh;
+    text-decoration: none;
+    font-size: 1vw;
+    color: black;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+}
+
+.sidebar a {
+    color: white !important;
+    padding: 0 5vh 5vh 5vh;
+}
+
+.sidebar a:hover, .dropdown-btn:hover {
+    color: white;
+}
+
+.main {
+    color: white;
+    text-align: center;
+    margin-right: 25%;
+}
+
+table {
+    margin-left: 25%;
+    margin-top: 5%;
+    border-collapse: collapse;
+    width: 70%;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+th, td {
+    border: 1px solid goldenrod;
+    padding: 1%;
+}
+
+tr:hover {
+    background-color: goldenrod;
+    color: white;
+    box-shadow: 1vh 1vh 1vh;
+    transform: translate(-1%, -1%);
+}
+
+.active {
+    color: white;
+}
+
+.dropdown-container {
+    display: none;
+    background-color: black;
+    color: white;
+    padding-top: 5vh;
+}
+
+.fa-caret-down {
+    float: right;
+    padding-right: 8px;
+}
+
+.navbar h1 {
+    color: goldenrod;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 5vh;
+    margin-left: 25%;
+    padding: 5vh 0;
+}
+
+
+.hidden {
+    display: none;
+}
+
+.deletionMessage p {
+    padding: 1px;
+    text-align: left;
+}
+
+.deletionMessage button {
+    width: 50%;
+    border: none;
+    padding: 1vh;
+    margin: 1vh 0;
+    border: 1px solid goldenrod;
+}
+
+.deletionMessage button:hover {
+    box-shadow: 1vh 1vh 1vh white;
+    transform: translate(-1%, -1%);
+}
+
+.editRow {
+    background-color: blue;
+    border: 2px solid white;
+    padding-right: 5px;
+}
+
+.editRow a {
+    color: white;
+    text-decoration: none;
+}
+
+.deleteRow {
+    background-color: red;
+    border: 2px solid white;
+}
+
+.deleteRow #delete {
+    background-color: red;
+    border: none;
+    color: white;
+}
+
+.search {
+    text-align: right;
+}
+
+.search input[type='text'] {
+    height: 25px;
+}
+
+.fa-magnifying-glass {
+    padding: 5px;
+}
+
+#myChart {
+    margin-left: 50%;
+    background-color: black;
+}
+
+#myPieChart {
+    margin-top: 5%;
+    margin-left: 50%;
+    background-color: black;
+}
+
+#myanotherChart {
+    margin-top: 5%;
+    margin-left: 50%;
+    background-color: black;
+}

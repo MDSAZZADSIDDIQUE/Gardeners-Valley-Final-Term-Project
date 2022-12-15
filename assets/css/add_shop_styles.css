@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Open+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul {
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 2.5vh;
+}
+
+nav ul li a {
+    color: goldenrod;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    padding: 5vh;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: goldenrod;
+    color: black;
+}
+
+.backgroundImage {
+    background-image: url("../images/pexels-dominika-roseclay-1141792.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vw;
+    font-family: 'Open Sans', sans-serif;
+    justify-content: center;
+    overflow: hidden;
+    outline-offset: -5vw;
+    position: relative;
+    text-align: center;
+    width: 100vw;
+}
+
+.logo {
+    height: 5vw;
+    width: 5vw;
+}
+
+.navbar {
+    align-items: center;
+    background-color: black;
+    border-bottom: 1px solid goldenrod;
+    display: flex;
+    height: 25%;
+}
+
+.sidebar {
+    height: 100%;
+    width: 20%;
+    background-color: goldenrod;
+    padding-top: 5vh;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+
+.sidebar a, .dropdown-btn {
+    padding: 5vh 1vh 5vh 5vh;
+    text-decoration: none;
+    font-size: 1vw;
+    color: black;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+}
+
+.sidebar a {
+    color: white !important;
+    padding: 0vh 5vh 5vh 5vh;
+}
+
+.sidebar a:hover, .dropdown-btn:hover {
+    color: white;
+}
+
+.main {
+    margin-left: 25%;
+    padding: 0px 10px;
+    color: white;
+}
+
+.active {
+    color: white;
+}
+
+.dropdown-container {
+    display: none;
+    background-color: black;
+    color: white;
+    padding-top: 5vh;
+}
+
+.fa-caret-down {
+    float: right;
+    padding-right: 8px;
+}
+
+form {
+    color: goldenrod;
+    font-size: 2.5vh;
+    text-align: left;
+
+}
+
+
+
+hr {
+    background-color: goldenrod;
+    border: none;
+    height: 1px;
+}
+
+input[type = email], [type = password], [type = text] {
+    border: 3px solid goldenrod;
+    border-radius: 5px;
+    height: 25%;
+    margin: 0 0 5% 5%;
+    width: 90%;
+}
+
+input[type = submit] {
+    background-color: black;
+    border: 1px solid goldenrod;
+    color: goldenrod;
+    font-size: 2.5vh;
+    font-weight: bolder;
+    margin: 5%;
+    padding: 1%;
+    width: 90%;
+}
+
+input[type = submit]:hover {
+    background-color: goldenrod;
+    color: black;
+}
+
+label {
+    display: inline-block;
+    margin: 5%;
+}
+
+.navbar h1 {
+    color: goldenrod;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 5vh;
+    margin-left: 25%;
+    padding: 5vh 0;
+}
+
+fieldset {
+    border: none;
+    display: inline-block;
+    position: absolute;
+    width: 50%;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+table {
+    width: 100%;
+}
+
+
+small {
+    color: red;
+    margin-left: 5%;
+}
+
+#show_password {
+    margin-left: 5%;
+}

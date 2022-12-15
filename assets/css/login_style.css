@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Open+Sans&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+form {
+    color: goldenrod;
+    font-size: 2.5vh;
+}
+
+fieldset {
+    background-color: black;
+    border: thick ridge goldenrod;
+    display: inline-block;
+    left: 50%;
+    position: absolute;
+    top: 75%;
+    transform: translate(-50%, -65%);
+    width: 25%;
+}
+
+hr {
+    background-color: goldenrod;
+    border: none;
+    height: 1px;
+}
+
+input[type = email], [type = text], [type = password] {
+    height: 25%;
+    margin-left: 5%;
+    width: 90%;
+}
+
+input[type = submit] {
+    background-color: black;
+    border: 1px solid goldenrod;
+    color: goldenrod;
+    font-size: 2.5vh;
+    font-weight: bolder;
+    margin: 5%;
+    padding: 2.5%;
+    width: 90%;
+}
+
+input[type = submit]:hover {
+    background-color: goldenrod;
+    color: black;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul {
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 2.5vh;
+}
+
+nav ul li a {
+    color: goldenrod;
+    font-weight: bold;
+    padding: 4vh;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: goldenrod;
+    color: black;
+}
+
+small {
+    color: red;
+    margin: 5%;
+}
+
+.backgroundImage {
+    animation: changeImage 10s infinite ease-in-out;
+    background-image: url(../images/pexels-sohail-nachiti-807598.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+    width: 100vw;
+}
+
+.createAnAccount {
+    color: gold;
+    display: inline-block;
+    margin: 5%;
+    text-align: center;
+    text-decoration: none;
+}
+
+.emailAddress, .password {
+    display: inline-block;
+    margin: 5%;
+}
+
+.forgotPassword {
+    color: goldenrod;
+    display: inline-block;
+    margin: 5%;
+    text-decoration: none;
+}
+
+.logo {
+    height: 5vw;
+    width: 5vw;
+}
+
+.navbar {
+    align-items: center;
+    background-color: black;
+    border-bottom: 1px solid goldenrod;
+    display: flex;
+}
+
+.subheader {
+    font-size: 5vh;
+    padding: 5vh;
+    text-align: center;
+}
+
+#show_password, #remember_me {
+    margin: 5%;
+}
+
+@keyframes changeImage {
+    0% {
+        background-image: url(../images/pexels-aditya-aiyar-1407305.jpg);
+    }
+    25% {
+        background-image: url(../images/pexels-lisa-fotios-2215534.jpg);
+    }
+    50% {
+        background-image: url(../images/pexels-lisa-fotios-2473990.jpg);
+    }
+    75% {
+        background-image: url(../images/pexels-sameera-madusanka-1572036.jpg);
+    }
+    100% {
+        background-image: url(../images/pexels-sohail-nachiti-807598.jpg);
+    }
+}

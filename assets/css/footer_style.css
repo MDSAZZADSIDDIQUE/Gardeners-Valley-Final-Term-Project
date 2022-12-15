@@ -1,0 +1,20 @@
+.footerSection {
+    background-color: black;
+    color: goldenrod;
+    text-align: center;
+    padding: 5vh 0vh;
+
+}
+
+.footerSection i {
+    padding: 0 1vw;
+    font-size: 2vw;
+}
+
+.footerSection h6 {
+    font-size: 2vw;
+}
+
+.footerSection i, .footerSection h6, .footerSection p {
+    margin: 1vw 0;
+}

@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Open+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul {
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 2.5vh;
+}
+
+nav ul li a {
+    color: goldenrod;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    padding: 4vh;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: goldenrod;
+    color: black;
+}
+
+.header {
+    color: white;
+    font-family: 'Monoton', cursive;
+    font-size: 7.5vw;
+    left: 50%;
+    position: absolute;
+    text-transform: uppercase;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.backgroundImage {
+    animation: changeImage 10s infinite ease-in-out;
+    background-image: url(../images/pexels-aditya-aiyar-1407305.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    justify-content: center;
+    outline: 1vh solid white;
+    overflow: hidden;
+    outline-offset: -5vw;
+    position: relative;
+    text-align: center;
+    width: 100vw;
+}
+
+.logo {
+    height: 5vw;
+    width: 5vw;
+}
+
+.navbar {
+    align-items: center;
+    background-color: black;
+    border-bottom: 1px solid goldenrod;
+    display: flex;
+}
+
+.row {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.categories {
+    margin: 5vw 0;
+}
+
+.featuredProduct {
+    flex-basis: 25%;
+    margin-bottom: 5vw;
+}
+
+.featuredProduct img {
+    width: 100%;
+}
+
+.smallContainer {
+    margin: auto;
+    padding-left: 5vh;
+    padding-right: 5vh;
+}
+
+.product {
+    flex-basis: 20%;
+    padding: 5vh;
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 1vh 2vh 3vh goldenrod;
+    margin-bottom: 5vh;
+
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+}
+
+.title {
+    text-align: center;
+    position: relative;
+    line-height: 5vw;
+
+}
+
+.productDetails {
+    margin: 10vh 0;
+    display: flex;
+    background-color: black;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    padding: 5vh;
+}
+
+.productDetails:hover {
+    transform: translate(-1%, -1%);
+    box-shadow: 1vh 5vh 5vh goldenrod;
+}
+
+.productDetails img {
+    margin: 5vh;
+    width: 25%;
+    border: 2px goldenrod solid;
+    box-shadow: 1vh 5vh 6vh goldenrod;
+}
+
+.productDetails img {
+    margin: 5vh;
+    width: 25%;
+    border: 2px goldenrod solid;
+    box-shadow: 1vh 5vh 6vh goldenrod;
+}
+
+.productDetails {
+    outline: 1px solid goldenrod;
+    outline-offset: -1vw;
+}
+
+.productDetails div {
+    border-left: 1px solid goldenrod;
+}
+
+.productDetails h1 {
+    color: goldenrod;
+    margin: 10vh 0 10vh 2vw;
+}
+
+.productDetails p {
+    margin: 10vh 0 10vh 2vw;
+}
+
+.smallContainer {
+    background-color: black;
+    padding: 5vh;
+}
+
+.product {
+    background-color: black;
+    color: goldenrod;
+    width: 100px;
+}
+
+.product h4 {
+    padding: 1vh;
+}
+
+.product p {
+    padding: 1vh;
+}
+
+.product .rating {
+    padding: 1vh;
+}
+
+.title {
+    background-color: goldenrod;
+    color: black;
+    font-size: 5vh;
+    border: 1px solid goldenrod;
+    margin: 5vh 0;
+}
+
+.product:hover {
+    transform: translate(-2%, -2%);
+    box-shadow: 1vh 4vh 5vh goldenrod;
+}
+
+.addToCart {
+    height: 5vh;
+    margin-top: 1vh;
+    width: 100%;
+    font-size: 2vh;
+    background-color: white;
+    color: goldenrod;
+    border: 2px solid goldenrod;
+}
+
+.addToCart:hover {
+    background-color: black;
+    color: goldenrod;
+    border: 1px solid goldenrod;
+}
+
+#myChart {
+    margin-left: 30%;
+}
+.text {
+    color: white;
+}
+
+.message {
+    margin: 5%;
+    text-align: center;
+    color: goldenrod;
+}
+
+
+
+@keyframes changeImage {
+    0% {
+        background-image: url(../images/pexels-aditya-aiyar-1407305.jpg);
+    }
+    25% {
+        background-image: url(../images/pexels-lisa-fotios-2215534.jpg);
+    }
+    50% {
+        background-image: url(../images/pexels-lisa-fotios-2473990.jpg);
+    }
+    75% {
+        background-image: url(../images/pexels-sameera-madusanka-1572036.jpg);
+    }
+    100% {
+        background-image: url(../images/pexels-sohail-nachiti-807598.jpg);
+    }
+}
